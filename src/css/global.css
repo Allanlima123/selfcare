@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+:root{
+    --cor-verde:#5CA720;
+    --cor-preto:#161616;
+    --cor-cinza:#A5A1A1;/*linhas divisórias*/
+    --cor-cinza-claro:#F9F9F9;/*background do footer*/
+    --fonte-lato:'Lato', sans-serif;
+    --cor-branco:#ffffff;
+    --cor-cinza200:#E5E5E5;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/* section{
+    margin: 0 6%;
+    background: var(--cor-cinza-claro);
+} */

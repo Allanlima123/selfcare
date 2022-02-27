@@ -1,0 +1,97 @@
+.footer{
+    background: #F9F9F9;
+    font-family: var(--fonte-lato);
+    max-width: 144rem;
+    margin: 0 auto;
+}
+
+.footer .security-terms{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: .2rem solid var(--cor-cinza);
+    padding: 4.4rem 6%;
+}
+
+.footer .security-terms .terms p{
+    font-weight: 600;
+    font-size: 2rem;
+    font-style: normal;
+    line-height: 1.5;
+}
+
+.footer .security-terms .terms p a{
+    color: var(--cor-preto);
+}
+
+.footer .security-terms .form p{
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2rem;
+    color: var(--cor-preto);
+    margin-bottom: 1.8rem;
+}
+
+.footer .security-terms .form .input-box{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer .security-terms .form .input-box #userEmail{
+    display: block;
+    width: 39.7rem;
+    background: var(--cor-branco);
+    padding: 1.9rem 0;
+    padding-left: 1rem;
+    border: .05rem solid var(--cor-cinza);
+    border-radius: .5rem 0 0 .5rem;
+}
+
+.footer .security-terms .form .input-box #userEmail::placeholder{
+    color: #A8A4A4;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.footer .security-terms .form .input-box .btnEnviar{
+    display: inline-block;
+    width: 15.2rem;
+    height: 5.4rem;
+    background: var(--cor-verde);
+    color: var(--cor-branco);
+    font-size: 2rem;
+    border-radius:0 .5rem .5rem 0;
+    cursor: pointer;
+}
+
+.networks-and-payment{
+    padding: 4rem 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.networks-and-payment .redes-sociais img{
+    width: 3.4rem;
+    height: 3.4rem;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.networks-and-payment .payment-methods{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.networks-and-payment .payment-methods a{
+    display: block;
+    margin: 0 2rem;
+} 
+
+.networks-and-payment .payment-methods a img{
+    width: 100%;
+    object-fit: contain;
+}

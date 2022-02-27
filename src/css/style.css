@@ -1,0 +1,214 @@
+.header{
+    background: var(--cor-branco);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    box-shadow: 0 .1rem .6rem rgba(0,0,0,.2);
+}
+
+.header .inner-width{
+    max-width: 144rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 6%;
+}
+
+.header .inner-width .icones .icone{
+    display: inline-block;
+    width:2.5rem;
+    height: 2.5rem;
+    margin: 0 2rem;
+}
+
+.header .inner-width .icones .icone img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.home{
+    max-width: 144rem;
+    margin: 0 auto;
+    margin-top: 9.3rem;
+    background-image: url(../image/banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 55vh;
+}
+
+.our-products{
+    max-width: 144rem;
+    margin: 0 auto;
+}
+
+.our-products .offer-product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.3rem 6%;
+    font-family: var(--fonte-lato);
+    color: var(--cor-preto);
+    border-bottom: .2rem solid var(--cor-cinza);
+    margin-bottom: 8rem;
+}
+
+.our-products .offer-product h3{
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.our-products .offer-product span{
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.our-products .box-product{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(32rem,1fr));
+    margin: 0 6%;
+    column-gap: 10rem;
+}
+
+.our-products .box-product .product img{
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: .5rem;
+}
+
+.our-products .box-product .product img:hover{
+    opacity: .8;
+    transition: .3s linear;
+}
+
+.our-products .box-product .product .about-the-product{
+    margin: 1.5rem 0 5rem 0;
+    font-family: var(--fonte-lato);
+}
+
+.our-products .box-product .product .about-the-product .descrition{
+    font-weight: 500;
+    font-size: 2.2rem;
+    color: var(--cor-preto);
+    padding-bottom: .7rem;
+}
+
+.our-products .box-product .product .about-the-product .preco{
+    color: var(--cor-verde);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.our-products .box-product .product .about-the-product .preco strong{
+    color: var(--cor-preto);
+    margin-right: .5rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+
+    .our-products .box-product{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(28rem,1fr));
+    }
+
+    .our-products .box-product .product img{
+        height: 28rem;
+    }
+
+    .footer .security-terms .form .input-box #userEmail{
+        width: 34.7rem;
+    }
+
+    .footer .security-terms .form .input-box .btnEnviar{
+        width: 12rem;
+    }
+}
+
+@media(max-width:768px){
+    html{
+        font-size: 50%;
+    }
+
+    .our-products .box-product{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    }
+
+    .our-products .box-product .product img{
+        height: 25rem;
+    }
+
+    .header .inner-width .icones .icone{
+        margin: 0 1.5rem;
+    }
+
+    .home{
+        min-height: 45vh;
+    }
+
+    .footer .security-terms .terms{
+        margin-bottom: 5rem;
+    }
+
+    .footer .security-terms .form{
+        width: 100%;
+    }
+
+    .footer .security-terms .form .input-box #userEmail{
+        margin-bottom: 1.5rem;
+        min-width: 100%;
+        border-radius: 5px;
+    }
+
+    .footer .security-terms .form .input-box .btnEnviar{
+        width: 100%;
+        border-radius: 5px;
+    }
+}
+
+@media(max-width:425px){
+    .home{
+        min-height: 40vh;
+    }
+
+    .footer .networks-and-payment .payment-methods a img:nth-child(1){
+        display: block;
+        height: 4rem;
+        width: 4rem;
+        margin: 0rem;
+    }
+
+    .footer .networks-and-payment .payment-methods a img:nth-child(2){
+        display: block;
+        height: 1.5rem;
+        width: 1.8rem;
+        margin: 0rem;
+    }
+
+    .footer .networks-and-payment .payment-methods a:nth-child(3){
+        display: block;
+        height: 2rem;
+        width: 3rem;
+        margin: 0rem;
+    }
+}
+
+@media(max-width:375px){
+    .home{
+        min-height: 35vh;
+    }
+}
+
